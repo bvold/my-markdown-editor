@@ -1,5 +1,6 @@
 ```text
-I would like to have a solution that I could host in a web server (flexible) where I could bring markdown files into the (static?) site, and users could use a library/module/function to be able to edit the content and then save the mark file back in github. Is there a tool chain that you know of that can do this in an open source way?  If it is not too bad to implement, I would like to use Astro and Strapi, but you can suggest other tools if you think it would work better, or would be easier to implemnt.  If you could create a step by step demo that would be super great.```
+I would like to have a solution that I could host in a web server (flexible) where I could bring markdown files into the (static?) site, and users could use a library/module/function to be able to edit the content and then save the mark file back in github. Is there a tool chain that you know of that can do this in an open source way?  If it is not too bad to implement, I would like to use Astro and Strapi, but you can suggest other tools if you think it would work better, or would be easier to implemnt.  If you could create a step by step demo that would be super great.
+```
 
 Your requirements for a flexible, web-based solution to edit and manage markdown files with GitHub integration can be accomplished using a combination of open-source tools. While Astro and Strapi are powerful options, I'd like to suggest a slightly different stack that might be easier to implement and maintain for this specific use case. Here's a proposed solution using Next.js, MDX, and GitHub API:
 
@@ -257,7 +258,8 @@ Run npm install to ensure all dependencies are installed.
 Start your development server again with npm run dev.
 
 These adjustments should resolve the "Module not found" error you were encountering. The file structure should now look like this:
-Copyyour-project/
+<pre>
+your-project/
 ├── app/
 │   ├── api/
 │   │   └── markdown/
@@ -272,6 +274,7 @@ Copyyour-project/
 │   └── page.js
 ├── .env.local
 └── package.json
+</pre>
 If you're still encountering issues after making these changes, please let me know, and I'll be happy to help you troubleshoot further. CopyRetryClaude does not have the ability to run the code it generates yet.BVThere is an error when I start the application up :  ○ Compiling /[slug] ...
  ⚠ ./app/[slug]/page.js
 Attempted import error: '../components/MarkdownEditor' does not contain a default export (imported as 'MarkdownEditor').
